@@ -1,0 +1,122 @@
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Fade animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 3.5s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Text overlay */
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 15px;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.overlay-text {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 15px;
+}
+
+.countdown-item {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.countdown-item span {
+  display: block;
+  font-size: 30px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Responsive image styling */
+.mySlides img {
+  width: 100%; /* Make images responsive */
+  border: 5px solid #fff; /* Add a white border */
+  box-sizing: border-box; /* Include border in the image's total width */
+}
+
+/* Adjustments for smaller devices */
+@media only screen and (max-width: 768px) {
+  .overlay-content {
+    width: 90%; /* Increase width for smaller devices */
+  }
+
+  .overlay-text, .countdown-timer {
+    font-size: 14px; /* Decrease font size for smaller devices */
+  }
+
+  .countdown-item span {
+    font-size: 24px; /* Decrease font size for countdown numbers on smaller devices */
+  }
+}

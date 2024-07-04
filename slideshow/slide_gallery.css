@@ -1,0 +1,66 @@
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+/* Slides */
+.slide {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: inherit; /* Inherits color from the WordPress theme */
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Dot indicators */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: inherit; /* Inherits background from the WordPress theme */
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: inherit; /* Inherits color from the WordPress theme */
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171; /* Example color, can be set to inherit or a specific theme color */
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .prev, .next, .text {font-size: 11px}
+}
