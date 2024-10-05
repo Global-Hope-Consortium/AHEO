@@ -8,5 +8,6 @@
         "tabcontent",
         "tablinks",
         "wpforms"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
