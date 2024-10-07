@@ -1,0 +1,47 @@
+.event-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .poster {
+    width: 48%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .poster img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  
+  .cta-btn {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #A7864B; /* Gold color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: red;
+  }
+
+  /* Media query for mobile devices */
+@media (max-width: 768px) {
+    .event-section {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .poster {
+      width: 100%; /* Full width for mobile */
+    }
+  };
